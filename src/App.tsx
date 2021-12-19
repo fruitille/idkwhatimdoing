@@ -30,7 +30,7 @@ function App() {
 
   return (
     <IntlProvider messages={message} locale={lang}>
-      <Router>
+      <Router basename="/anothercharcheck">
         <Header/>
         <Routes>
           <Route path="/" element={result ? <ResultPage/> : <MainPage />} />

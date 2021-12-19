@@ -1,0 +1,32 @@
+import React, { useContext } from 'react'
+import styled from 'styled-components'
+import { AnotherContext } from '../../contexts'
+
+const Stylemark = styled.img`
+    position: absolute;
+    width: 30px;
+    left: -6px;
+    top: -6px;
+    z-index: 3;
+`
+
+const CharacterSelect:React.FC<CharacterInfo> = (data) => {
+
+    const {addInven, removeInven, inven} = useContext(AnotherContext)
+
+    const toggleInven = (id: number) => {
+        if(inven.includes(id)) removeInven(id)
+        else addInven(id)
+    }
+
+    return (
+        <div onClick={() => toggleInven(data.id)} style={{position: "relative", width:60, margin: 3, display: "inline-block"}}>
+            {data.style !== "4.5" ? <Stylemark src={`images/category/${data.style}.png`}/> : null}
+            <img className={!inven.includes(data.id) ? "gray" : ""} alt="select"
+                src={`images/character/${data.id}.png`} 
+            style={{width:60, borderRadius:3 }}/>
+        </div>
+    )
+}
+
+export default CharacterSelect

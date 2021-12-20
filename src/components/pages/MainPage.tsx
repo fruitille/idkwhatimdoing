@@ -20,7 +20,6 @@ function MainPage() {
     const [SearchName, setSearchName] = useState("")
 
     const HandleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        console.log(e)
         setSearchName(e.target.value);
     }
 
@@ -28,8 +27,6 @@ function MainPage() {
     .filter(e => Element===0 || Math.floor(e.category/10)===Element)
     .filter(e => Weapon===0 || Math.floor(e.category%10)===Weapon)
     .filter(e => version==="japanese" || !e.jonly)
-    
-    console.log(filtered)
 
     return (
         <div style={{margin: "10px auto", width:"100%", maxWidth: "1400px"}}>

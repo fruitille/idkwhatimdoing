@@ -8,6 +8,7 @@ const AnotherContext = createContext({
     version: "global",
     changeVersion: (value: string) => {},
     inven: [] as number[],
+    setInven: (data:number[]) => {},
     addInven: (id:number) => {},
     removeInven: (id:number) => {}
 })
@@ -36,6 +37,7 @@ const AnotherProvider = ({ children }: Props): JSX.Element => {
       window.localStorage.setItem("a_ver", value)
       setVersion(value);
     };
+
     const addInven = (id: number): void => {
       const newData = [...inven, id]
       window.localStorage.setItem("a_inv", newData.join(","))
@@ -57,6 +59,7 @@ const AnotherProvider = ({ children }: Props): JSX.Element => {
           version,
           changeVersion,
           inven,
+          setInven,
           addInven,
           removeInven,
         }}>

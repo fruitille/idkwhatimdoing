@@ -31,7 +31,6 @@ function ResultPage() {
 
     const renderNo = (free: boolean) => {
         const parsedCodes = codes.filter(code => !MyCharacter.map(a => a?.code).includes(code))
-        console.log(parsedCodes)
         const parsedData = data.filter(info => parsedCodes.includes(info.code) && info.first && info.free === free)
         .filter(e => version==="japanese" || !e.jonly)
 

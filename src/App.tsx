@@ -11,19 +11,20 @@ import { AnotherContext } from './contexts';
 function App() {
 
 
-  const announceViewed = Boolean(window.localStorage.getItem("a_v"))
+  const announceViewed = Boolean(window.localStorage.getItem("a_v_2"))
 
   const { lang, result } = useContext(AnotherContext)
   const message = require(`./language/${lang}.json`)
 
   useEffect(() => {
     if(!announceViewed) {
+      window.localStorage.removeItem("a_v")
       Swal.fire({
-        title: '공지사항',
-        html: '사이트가 리뉴얼되었습니다.<br>캐릭터 체크를 다시 해 주세요.',
+        title: 'Update - JAP 2.11.60',
+        html: '플람라피스 + 1캐릭 추가<br>Add Flamlapis + 1 Character',
         icon: 'success',
       }).then(() => {
-        window.localStorage.setItem("a_v", "true")
+        window.localStorage.setItem("a_v_2", "true")
       })
     }
   }, [announceViewed])

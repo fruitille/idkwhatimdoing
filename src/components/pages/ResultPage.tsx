@@ -107,7 +107,7 @@ function ResultPage() {
                     <Panel header={formatMessage({id: "resultmenu3"})} key="3">
                         <Row align="middle" justify="center" style={{marginTop: "5px"}}>
                             {["ns", "as", "es"].map(style => (
-                                <>
+                                <React.Fragment key={style}>
                                     <Col xs={24} sm={4}>
                                         <img src={`images/category/${style}.png`} alt={style} width="40"/>
                                     </Col>
@@ -115,7 +115,7 @@ function ResultPage() {
                                         {renderCC(style)}
                                     </Col>
                                     {style !== "es" ? <Divider style={{margin: "15px auto"}}/> : null}
-                                </>
+                                </React.Fragment>
                             ))}     
                         </Row>
                     </Panel>

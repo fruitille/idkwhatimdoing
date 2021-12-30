@@ -1,6 +1,7 @@
 import { createContext, useState } from "react";
 
 const AnotherContext = createContext({
+    data: [] as CharacterInfo[],
     lang: "ko", 
     changeLang: (word: string) => {},
     result: false,
@@ -9,7 +10,7 @@ const AnotherContext = createContext({
     changeVersion: (value: string) => {},
     inven: [] as number[],
     setInven: (data:number[]) => {},
-    addInven: (id:number) => {},
+    addInven: (id:number[]) => {},
     removeInven: (id:number) => {}
 })
 
@@ -19,11 +20,19 @@ interface Props {
 
 const AnotherProvider = ({ children }: Props): JSX.Element => {
 
+    const data: Array<CharacterInfo> = require("../data/character.json") 
 
     const [lang, setLang] = useState(window.localStorage.getItem("a_lan") || "ko");
     const [result, setResult] = useState(window.localStorage.getItem("a_res")==="true")
     const [version, setVersion] = useState(window.localStorage.getItem("a_ver") || "global")
-    const [inven, setInven] = useState(window.localStorage.getItem("a_inv")?.split(",").map(Number) || [])
+    const [inven, setInven] = useState(() => {
+      const local = window.localStorage.getItem("a_inv")?.split(",").map(Number) || [] as number[]
+      const add = data.filter(a => local.includes(a.id))
+      .map(a => a.from || [] as number[])
+      const final = local.concat(...add)
+      // console.log(final)
+      return final
+    })
   
     const changeLang = (word: string): void => {
       setLang(word);
@@ -38,8 +47,8 @@ const AnotherProvider = ({ children }: Props): JSX.Element => {
       setVersion(value);
     };
 
-    const addInven = (id: number): void => {
-      const newData = [...inven, id]
+    const addInven = (id: number[]): void => {
+      const newData = [...inven, ...id]
       window.localStorage.setItem("a_inv", newData.join(","))
       setInven(newData);
     };
@@ -52,6 +61,7 @@ const AnotherProvider = ({ children }: Props): JSX.Element => {
     return (
       <AnotherContext.Provider
         value={{
+          data,
           lang,
           changeLang,
           result,

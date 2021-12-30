@@ -36,12 +36,12 @@ function MainPage() {
                     <div style={{display:"flex", flexWrap: "wrap", justifyContent:"center"}}>
                         <Select defaultValue={0} onChange={(value) => setElement(value)} style={{width:"120px", margin:3}}>
                             {ELEMENTS.map(({id, element}) => (
-                                <Option value={id}>{formatMessage({id: element})}</Option>
+                                <Option value={id} key={id}>{formatMessage({id: element})}</Option>
                             ))}
                         </Select>
                         <Select defaultValue={0} onChange={(value) => setWeapon(value)} style={{width:"120px", margin:3}}>
                             {WEAPONS.map(({id, weapon}) => (
-                                <Option value={id}>{formatMessage({id: weapon})}</Option>
+                                <Option value={id} key={id}>{formatMessage({id: weapon})}</Option>
                             ))}
                         </Select>
                         <Search style={{width:"246px", margin: "0.2rem 8px 1rem 8px"}} 

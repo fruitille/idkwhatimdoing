@@ -11,20 +11,20 @@ import { AnotherContext } from './contexts';
 function App() {
 
 
-  const announceViewed = Boolean(window.localStorage.getItem("a_v_2"))
+  const announceViewed = Boolean(window.localStorage.getItem("a_v"))
 
   const { lang, result } = useContext(AnotherContext)
   const message = require(`./language/${lang}.json`)
 
   useEffect(() => {
     if(!announceViewed) {
-      window.localStorage.removeItem("a_v")
+      window.localStorage.removeItem("a_v_2")
       Swal.fire({
-        title: 'Update - JAP 2.11.60',
-        html: '플람라피스 + 1캐릭 추가<br>Add Flamlapis + 1 Character',
+        title: 'Update - JAP 2.11.60 ex',
+        html: '자장의 창술사 추가<br>Add 1 Character',
         icon: 'success',
       }).then(() => {
-        window.localStorage.setItem("a_v_2", "true")
+        window.localStorage.setItem("a_v", "true")
       })
     }
   }, [announceViewed])

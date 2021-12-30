@@ -15,8 +15,12 @@ const CharacterSelect:React.FC<CharacterInfo> = (data) => {
     const {addInven, removeInven, inven} = useContext(AnotherContext)
 
     const toggleInven = (id: number) => {
-        if(inven.includes(id)) removeInven(id)
-        else addInven(id)
+        if(inven.includes(id)) 
+            removeInven(id)
+        else {
+            const newData = data.from !== undefined ? [id, ...data.from] : [id]
+            addInven(newData)
+        }
     }
 
     return (

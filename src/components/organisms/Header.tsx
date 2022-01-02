@@ -9,7 +9,7 @@ function Header() {
     const { lang, result, version, changeLang, changeVersion, changeResult } = useContext(AnotherContext)
 
     return (
-        <Row align="middle" justify="center" gutter={[5, 10]} style={{margin: "10px auto", maxWidth: "1000px"}}>
+        <Row align="middle" justify="center" gutter={[5, 10]} style={{margin: "15px auto", maxWidth: "1000px"}}>
             <Col xs={24} sm={12} style={{display:"flex", alignItems:"center", justifyContent: "center"}}>
                 <a href="https://hu-lee.github.io/anotherdungeon/" rel="noreferrer" target="_blank">
                     <Button style={{ height: "50px", lineHeight: "35px",fontSize: "1.4rem", fontWeight: 600, margin: 5}}>

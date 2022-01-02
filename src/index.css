@@ -46,3 +46,8 @@ body {
 td[class="odd"] {
   background-color: rgb(241, 241, 241);
 }
+
+.announce {
+  text-align: left;
+  font-size: 15px;
+}

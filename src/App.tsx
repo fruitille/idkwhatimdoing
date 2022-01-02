@@ -8,23 +8,30 @@ import MainPage from './components/pages/MainPage';
 import ResultPage from './components/pages/ResultPage';
 import { AnotherContext } from './contexts';
 
+const announceHTML = `<div class="announce">
+  표가 유용했다는 의견이 있어<br/>
+  결과 페이지에서 다운로드 가능하도록 하였습니다.
+  <br/><br/>
+  Table is Back.<br/>
+  You can view and download in result section.
+</div>`
+
 function App() {
 
-
-  const announceViewed = Boolean(window.localStorage.getItem("a_v"))
+  const announceViewed = Boolean(window.localStorage.getItem("a_v_2"))
 
   const { lang, result } = useContext(AnotherContext)
   const message = require(`./language/${lang}.json`)
 
   useEffect(() => {
     if(!announceViewed) {
-      window.localStorage.removeItem("a_v_2")
+      window.localStorage.removeItem("a_v")
       Swal.fire({
-        title: 'Update - JAP 2.11.60 ex',
-        html: '자장의 창술사 추가<br>Add 1 Character',
+        title: 'Feature Update - 22.01.02',
+        html: announceHTML,
         icon: 'success',
       }).then(() => {
-        window.localStorage.setItem("a_v", "true")
+        window.localStorage.setItem("a_v_2", "true")
       })
     }
   }, [announceViewed])

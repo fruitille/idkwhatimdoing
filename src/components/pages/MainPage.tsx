@@ -29,7 +29,8 @@ function MainPage() {
     .filter(e => version==="japanese" || !e.jonly)
 
     return (
-        <div style={{margin: "10px auto", width:"100%", maxWidth: "1400px"}}>
+        <div style={{margin: "0 auto", width:"100%", maxWidth: "1400px", paddingTop: 20}}>
+            <h1>Checklist</h1>
             <Row align="middle" justify="center" gutter={[10, 10]} style={{margin: "5px auto", maxWidth: "1200px"}}>
                 <Col span={24} style={{display:"flex", flexDirection:"column", alignItems:"center", justifyContent: "center", margin: "0 auto"}}>
                     <b>Filter</b>

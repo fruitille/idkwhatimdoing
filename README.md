@@ -17,7 +17,7 @@
 iOS 일부 기기에서 다운로드 버튼이 동작하지 않을 수 있음   
 
 ### Tech
-FE : React(Typescript)   
+FE : React (Typescript)   
 BE : None (JSON 데이터 수작업)
 
 ### React Library

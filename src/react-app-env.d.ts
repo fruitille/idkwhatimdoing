@@ -16,3 +16,14 @@ interface CharacterInfo {
 interface InfoProps {
     array: CharacterInfo[]
 }
+
+interface DownloadProps {
+    text?: string;
+    width?: number;
+    height?: number;
+    tag: string;
+}
+
+interface CharacterTableViewProps extends CharacterInfo {
+    have: boolean;
+}

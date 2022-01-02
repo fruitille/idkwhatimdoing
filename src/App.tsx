@@ -30,7 +30,7 @@ function App() {
   }, [announceViewed])
 
   return (
-    <IntlProvider messages={message} locale={lang}>
+    <IntlProvider messages={message} locale={lang} defaultLocale='ko'>
       <Router basename="/anothercharcheck">
         <Header/>
         <Routes>

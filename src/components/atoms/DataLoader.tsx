@@ -57,7 +57,7 @@ function DataLoader() {
 
     return (
         <>
-            <Button style={{ height: "35px", width: "110px", fontSize: "0.9rem", fontWeight: 600, margin: 5}} 
+            <Button shape='round' style={{ height: "35px", width: "110px", fontSize: "0.9rem", fontWeight: 600, margin: 5}} 
             type="dashed"
             onClick={showModal}>DataLoader</Button>
             <Modal title="Data Copy &#38; Load" visible={isModalVisible} onCancel={handleCancel}

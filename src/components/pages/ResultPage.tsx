@@ -4,6 +4,7 @@ import { useIntl } from 'react-intl';
 import { AnotherContext } from '../../contexts'
 import { ELEMENTS } from '../../data/constant';
 import CharacterResult from '../atoms/CharacterResult';
+import DataManager from '../organisms/DataManager';
 
 const { Panel } = Collapse;
 
@@ -81,8 +82,10 @@ function ResultPage() {
 
     return (
         <div style={{margin: "0 auto", width:"100%", maxWidth: "1100px"}}>
-            <h1>VERSION : {version.toUpperCase()}</h1>
+            <h1>Result</h1>
             <b>{formatMessage({id: "resultalert"})}</b>
+            <Divider style={{margin: "10px auto"}}/>
+            <DataManager/>
             <Divider style={{margin: "10px auto"}}/>
             <div id="checkresult">
                 <Collapse defaultActiveKey={['1', '2', '3', '4']} style={{fontSize: "1rem", fontWeight: 600}}>

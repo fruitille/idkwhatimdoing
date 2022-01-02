@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { Button, Col, Radio, Row, Select } from 'antd';
 import { AnotherContext } from '../../contexts';
-import DataManager from '../molecules/DataManager';
 
 const { Option } = Select;
 
@@ -10,7 +9,7 @@ function Header() {
     const { lang, result, version, changeLang, changeVersion, changeResult } = useContext(AnotherContext)
 
     return (
-        <Row align="middle" justify="center" gutter={[10, 10]} style={{margin: "5px auto", maxWidth: "1000px"}}>
+        <Row align="middle" justify="center" gutter={[5, 10]} style={{margin: "10px auto", maxWidth: "1000px"}}>
             <Col xs={24} sm={12} style={{display:"flex", alignItems:"center", justifyContent: "center"}}>
                 <a href="https://hu-lee.github.io/anotherdungeon/" rel="noreferrer" target="_blank">
                     <Button style={{ height: "50px", lineHeight: "35px",fontSize: "1.4rem", fontWeight: 600, margin: 5}}>
@@ -20,7 +19,7 @@ function Header() {
                         </div>
                     </Button>
                 </a>
-                <Button style={{ height: "50px", width: "110px", fontSize: "1.2rem", fontWeight: 600, margin: 5}} type="primary" onClick={changeResult}>
+                <Button style={{ height: "50px", width: "110px", fontSize: "1.2rem", fontWeight: 600, margin: 3}} type="primary" onClick={changeResult}>
                     {result ? "Checklist" : "Result"}
                 </Button>
             </Col>
@@ -32,7 +31,6 @@ function Header() {
                     <Radio.Button value="en">ENG</Radio.Button>
                 </Radio.Group>
             </Col>
-            {!result ? 
             <Col xs={24} sm={6} style={{display:"flex", flexDirection: "column", alignItems:"center", justifyContent: "center"}}>
                 <b>Version</b>
                 <Select defaultValue={version} onChange={(value) => changeVersion(value)} style={{minWidth: 100}}>
@@ -40,7 +38,6 @@ function Header() {
                     <Option value="japanese">JAPAN (2.11.60)</Option>
                 </Select>
             </Col>
-            : <DataManager/>}
         </Row>
     )
 }

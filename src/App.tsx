@@ -9,29 +9,27 @@ import ResultPage from './components/pages/ResultPage';
 import { AnotherContext } from './contexts';
 
 const announceHTML = `<div class="announce">
-  표가 유용했다는 의견이 있어<br/>
-  결과 페이지에서 다운로드 가능하도록 하였습니다.
+  글판 히나기쿠 추가
   <br/><br/>
-  Table is Back.<br/>
-  You can view and download in result section.
+  Add Daisy on Global
 </div>`
 
 function App() {
 
-  const announceViewed = Boolean(window.localStorage.getItem("a_v_2"))
+  const announceViewed = Boolean(window.localStorage.getItem("a_v"))
 
   const { lang, result } = useContext(AnotherContext)
   const message = require(`./language/${lang}.json`)
 
   useEffect(() => {
     if(!announceViewed) {
-      window.localStorage.removeItem("a_v")
+      window.localStorage.removeItem("a_v_2")
       Swal.fire({
-        title: 'Feature Update - 22.01.02',
+        title: 'Update - 22.01.07',
         html: announceHTML,
         icon: 'success',
       }).then(() => {
-        window.localStorage.setItem("a_v_2", "true")
+        window.localStorage.setItem("a_v", "true")
       })
     }
   }, [announceViewed])

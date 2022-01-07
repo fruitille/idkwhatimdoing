@@ -2191,7 +2191,6 @@
         "category": 47,
         "free": false,
         "sky": "shadow",
-        "jonly": true,
         "first": true,
         "change": [238]
     },
@@ -2202,7 +2201,6 @@
         "from": [237],
         "category": 47,
         "sky": "shadow",
-        "jonly": true,
         "change": []
     },
     {

@@ -1703,7 +1703,7 @@
         "sky": "light",
         "jonly": false,
         "first": true,
-        "change": [187]
+        "change": [187, 286]
     },
     {
         "id": 187,
@@ -1714,7 +1714,7 @@
         "free": false,
         "sky": "light",
         "jonly": false,
-        "change": []
+        "change": [286]
     },
     {
         "id": 188,
@@ -2665,5 +2665,14 @@
         "sky": "shadow",
         "jonly": true,
         "change": [12]
+    },
+    {
+        "id": 286,
+        "code": "101050151",
+        "style": "ns",
+        "category": 55,
+        "sky": "shadow",
+        "jonly": true,
+        "change": [187]
     }
 ]

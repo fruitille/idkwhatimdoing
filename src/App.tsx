@@ -9,28 +9,28 @@ import ResultPage from './components/pages/ResultPage';
 import { AnotherContext } from './contexts';
 
 const announceHTML = `<div class="announce">
-  글판 이스카ES 반영<br/>
-  큐리오는 5성개방 이후에 추가예정
+  GLOBAL 2.11.200 & JAP 2.12.0<br/>
   <br/><br/>
-  Add Isuka ES on GLOBAL
+  미스트레아의 천명 오류 수정<br/>
+  Fix Mistrare's info
 </div>`
 
 function App() {
 
-  const announceViewed = Boolean(window.localStorage.getItem("a_v"))
+  const announceViewed = Boolean(window.localStorage.getItem("a_v_2"))
 
   const { lang, result } = useContext(AnotherContext)
   const message = require(`./language/${lang}.json`)
 
   useEffect(() => {
     if(!announceViewed) {
-      window.localStorage.removeItem("a_v_2")
+      window.localStorage.removeItem("a_v")
       Swal.fire({
-        title: 'Update - 22.01.14',
+        title: 'Update - 22.01.28',
         html: announceHTML,
         icon: 'success',
       }).then(() => {
-        window.localStorage.setItem("a_v", "true")
+        window.localStorage.setItem("a_v_2", "true")
       })
     }
   }, [announceViewed])

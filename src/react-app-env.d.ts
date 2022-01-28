@@ -8,6 +8,7 @@ interface CharacterInfo {
     free?: boolean;
     sky: string;
     jonly: boolean;
+    gonly: boolean;
     from?: number[];
     first?: boolean;
     change: number[];

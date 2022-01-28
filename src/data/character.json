@@ -1272,7 +1272,7 @@
         "sky": "light",
         "jonly": false,
         "first": true,
-        "change": [136, 140, 141]
+        "change": [136, 140, 141, 288]
     },
     {
         "id": 140,
@@ -1283,7 +1283,7 @@
         "free": false,
         "sky": "light",
         "jonly": false,
-        "change": [136, 141]
+        "change": [136, 141, 288]
     },
     {
         "id": 141,
@@ -1293,7 +1293,7 @@
         "free": false,
         "sky": "light",
         "jonly": false,
-        "change": [140]
+        "change": [140, 288]
     },
     {
         "id": 143,
@@ -1733,7 +1733,7 @@
         "category": 55,
         "from": [188],
         "free": false,
-        "sky": "light",
+        "sky": "shadow",
         "jonly": false,
         "change": [190]
     },
@@ -1743,7 +1743,7 @@
         "style": "as",
         "category": 55,
         "free": false,
-        "sky": "light",
+        "sky": "shadow",
         "jonly": true,
         "change": [189]
     },
@@ -2673,5 +2673,47 @@
         "sky": "shadow",
         "jonly": true,
         "change": [187]
+    },
+    {
+        "id": 287,
+        "code": "101000291",
+        "style": "ns",
+        "category": 28,
+        "sky": "light",
+        "jonly": true,
+        "free": true,
+        "first": true,
+        "change": []
+    },
+    {
+        "id": 288,
+        "code": "101040031",
+        "style": "es",
+        "category": 17,
+        "sky": "light",
+        "jonly": true,
+        "change": [140, 141]
+    },
+    {
+        "id": 289,
+        "code": "101000281",
+        "style": "4.5",
+        "category": 28,
+        "sky": "light",
+        "gonly": true,
+        "first": true,
+        "free": false,
+        "change": [290]
+    },
+    {
+        "id": 290,
+        "code": "101000281",
+        "style": "ns",
+        "category": 28,
+        "from": [289],
+        "sky": "light",
+        "gonly": true,
+        "free": false,
+        "change": []
     }
 ]

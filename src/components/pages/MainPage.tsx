@@ -26,7 +26,10 @@ function MainPage() {
     const filtered = data.filter(e => SearchName==="" || formatMessage({id: e.code}).toLowerCase().includes(SearchName.toLowerCase()))
     .filter(e => Element===0 || Math.floor(e.category/10)===Element)
     .filter(e => Weapon===0 || Math.floor(e.category%10)===Weapon)
-    .filter(e => version==="japanese" || !e.jonly)
+    .filter(e => {
+        if(version==="japanese") return !e.gonly
+        else return !e.jonly
+    })
 
     return (
         <div style={{margin: "0 auto", width:"100%", maxWidth: "1400px", paddingTop: 20}}>

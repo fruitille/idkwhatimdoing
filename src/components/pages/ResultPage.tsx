@@ -16,7 +16,10 @@ function ResultPage() {
     const { inven, version } = useContext(AnotherContext)
     
     const MyCharacter: CharacterInfo[] = data.filter(info => inven.includes(info.id))
-    .filter(e => version==="japanese" || !e.jonly)
+    .filter(e => {
+        if(version==="japanese") return !e.gonly
+        else return !e.jonly
+    })
     const codes = Array.from(new Set(data.map(a => a.code)))
 
     const sortArray = (array: CharacterInfo[]) => {
@@ -33,7 +36,10 @@ function ResultPage() {
     const renderNo = (free: boolean) => {
         const parsedCodes = codes.filter(code => !MyCharacter.map(a => a?.code).includes(code))
         const parsedData = data.filter(info => parsedCodes.includes(info.code) && info.first && info.free === free)
-        .filter(e => version==="japanese" || !e.jonly)
+        .filter(e => {
+            if(version==="japanese") return !e.gonly
+            else return !e.jonly
+        })
 
         sortArray(parsedData)
 
@@ -45,7 +51,10 @@ function ResultPage() {
     const render45 = (free: boolean) => {
         const parsedCodes = codes.filter(code => MyCharacter.filter(a => a?.code===code).length===1 && MyCharacter.filter(a => a?.code===code)[0]?.style==="4.5")
         const parsedData = data.filter(info => info.style==="4.5" && parsedCodes.includes(info.code) && info.free === free)
-        .filter(e => version==="japanese" || !e.jonly)
+        .filter(e => {
+            if(version==="japanese") return !e.gonly
+            else return !e.jonly
+        })
 
         sortArray(parsedData)
 

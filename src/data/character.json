@@ -1034,7 +1034,6 @@
         "category": 52,
         "free": false,
         "sky": "shadow",
-        "jonly": true,
         "first": true,
         "change": [87]
     },

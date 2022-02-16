@@ -9,26 +9,26 @@ import ResultPage from './components/pages/ResultPage';
 import { AnotherContext } from './contexts';
 
 const announceHTML = `<div class="announce">
-  검은 옷의 칼잡이 업데이트<br/>
-  (현재 버전에서는 일부 클래스 체인지가 불가능합니다.)
+  GLOBAL 2.11.200 UPDATE<br/>
+  제빌로 AS (Zeviro AS)
 </div>`
 
 function App() {
 
-  const announceViewed = Boolean(window.localStorage.getItem("a_v"))
+  const announceViewed = Boolean(window.localStorage.getItem("a_v_2"))
 
   const { lang, result } = useContext(AnotherContext)
   const message = require(`./language/${lang}.json`)
 
   useEffect(() => {
     if(!announceViewed) {
-      window.localStorage.removeItem("a_v_2")
+      window.localStorage.removeItem("a_v")
       Swal.fire({
-        title: 'Update - 22.02.07',
+        title: 'Update - 22.02.16',
         html: announceHTML,
         icon: 'success',
       }).then(() => {
-        window.localStorage.setItem("a_v", "true")
+        window.localStorage.setItem("a_v_2", "true")
       })
     }
   }, [announceViewed])

@@ -35,7 +35,7 @@ function Header() {
                 <b>Version</b>
                 <Select defaultValue={version} onChange={(value) => changeVersion(value)} style={{minWidth: 100}}>
                     <Option value="global">GLOBAL (2.11.200)</Option>
-                    <Option value="japanese">JAPAN (2.12.0)</Option>
+                    <Option value="japanese">JAPAN (2.12.10)</Option>
                 </Select>
             </Col>
         </Row>

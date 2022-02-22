@@ -9,26 +9,27 @@ import ResultPage from './components/pages/ResultPage';
 import { AnotherContext } from './contexts';
 
 const announceHTML = `<div class="announce">
-  GLOBAL 2.11.200 UPDATE<br/>
-  제빌로 AS (Zeviro AS)
+  JAPANESE 2.12.20 UPDATE<br/>
+  <br/>
+  에바의 속성 표기 오류 수정
 </div>`
 
 function App() {
 
-  const announceViewed = Boolean(window.localStorage.getItem("a_v_2"))
+  const announceViewed = Boolean(window.localStorage.getItem("a_v"))
 
   const { lang, result } = useContext(AnotherContext)
   const message = require(`./language/${lang}.json`)
 
   useEffect(() => {
     if(!announceViewed) {
-      window.localStorage.removeItem("a_v")
+      window.localStorage.removeItem("a_v_2")
       Swal.fire({
-        title: 'Update - 22.02.16',
+        title: 'Update - 22.02.22',
         html: announceHTML,
         icon: 'success',
       }).then(() => {
-        window.localStorage.setItem("a_v_2", "true")
+        window.localStorage.setItem("a_v", "true")
       })
     }
   }, [announceViewed])

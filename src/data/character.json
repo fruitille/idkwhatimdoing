@@ -2696,7 +2696,7 @@
         "id": 289,
         "code": "101000281",
         "style": "4.5",
-        "category": 28,
+        "category": 58,
         "sky": "light",
         "first": true,
         "free": false,
@@ -2706,9 +2706,52 @@
         "id": 290,
         "code": "101000281",
         "style": "ns",
-        "category": 28,
+        "category": 58,
         "from": [289],
         "sky": "light",
+        "free": false,
+        "change": []
+    },
+    {
+        "id": 291,
+        "code": "101000111",
+        "style": "4.5",
+        "category": 38,
+        "sky": "light",
+        "first": true,
+        "jonly": true,
+        "free": false,
+        "change": [292]
+    },
+    {
+        "id": 292,
+        "code": "101000111",
+        "style": "ns",
+        "category": 38,
+        "from": [291],
+        "sky": "light",
+        "jonly": true,
+        "free": false,
+        "change": []
+    },
+    {
+        "id": 293,
+        "code": "101020041",
+        "style": "4.5",
+        "category": 42,
+        "sky": "light",
+        "first": true,
+        "jonly": true,
+        "free": false,
+        "change": [294]
+    },
+    {
+        "id": 294,
+        "code": "101020041",
+        "style": "as",
+        "category": 42,
+        "sky": "light",
+        "jonly": true,
         "free": false,
         "change": []
     }

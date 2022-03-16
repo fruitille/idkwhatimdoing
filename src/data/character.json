@@ -1257,7 +1257,6 @@
         "category": 33,
         "free": false,
         "sky": "shadow",
-        "jonly": true,
         "first": true,
         "change": [140]
     },
@@ -1989,7 +1988,6 @@
         "category": 56,
         "free": false,
         "sky": "shadow",
-        "jonly": true,
         "first": true,
         "change": [209]
     },

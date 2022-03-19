@@ -9,9 +9,9 @@ import ResultPage from './components/pages/ResultPage';
 import { AnotherContext } from './contexts';
 
 const announceHTML = `<div class="announce">
-  GLOBAL 2.11.300 UPDATE<br/>
+  JAPANESE 2.12.50 UPDATE<br/>
   <br/>
-  푸른 빛의 낫잡이 반영
+  미르샤 AS 반영
 </div>`
 
 function App() {
@@ -23,13 +23,13 @@ function App() {
 
   useEffect(() => {
     if(!announceViewed) {
-      window.localStorage.removeItem("a_v")
+      window.localStorage.removeItem("a_v_2")
       Swal.fire({
-        title: 'Update - 22.03.16',
+        title: 'Update - 22.03.19',
         html: announceHTML,
         icon: 'success',
       }).then(() => {
-        window.localStorage.setItem("a_v_2", "true")
+        window.localStorage.setItem("a_v", "true")
       })
     }
   }, [announceViewed])

@@ -1494,7 +1494,7 @@
         "sky": "shadow",
         "jonly": false,
         "first": true,
-        "change": [162]
+        "change": [162,295]
     },
     {
         "id": 162,
@@ -1505,7 +1505,7 @@
         "free": false,
         "sky": "shadow",
         "jonly": false,
-        "change": []
+        "change": [295]
     },
     {
         "id": 163,
@@ -2752,5 +2752,15 @@
         "jonly": true,
         "free": false,
         "change": []
+    },
+    {
+        "id": 295,
+        "code": "101040131",
+        "style": "as",
+        "category": 54,
+        "free": false,
+        "sky": "shadow",
+        "jonly": true,
+        "change": [162]
     }
 ]

@@ -1152,7 +1152,7 @@
         "sky": "light",
         "jonly": false,
         "first": true,
-        "change": [127]
+        "change": [127,296]
     },
     {
         "id": 127,
@@ -1163,7 +1163,7 @@
         "free": false,
         "sky": "light",
         "jonly": false,
-        "change": []
+        "change": [296]
     },
     {
         "id": 128,
@@ -1741,7 +1741,6 @@
         "category": 55,
         "free": false,
         "sky": "shadow",
-        "jonly": true,
         "change": [189]
     },
     {
@@ -2762,5 +2761,15 @@
         "sky": "shadow",
         "jonly": true,
         "change": [162]
+    },
+    {
+        "id": 296,
+        "code": "101030111",
+        "style": "as",
+        "category": 23,
+        "free": false,
+        "sky": "light",
+        "jonly": true,
+        "change": [127]
     }
 ]

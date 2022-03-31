@@ -34,8 +34,8 @@ function Header() {
             <Col xs={24} sm={6} style={{display:"flex", flexDirection: "column", alignItems:"center", justifyContent: "center"}}>
                 <b>Version</b>
                 <Select defaultValue={version} onChange={(value) => changeVersion(value)} style={{minWidth: 100}}>
-                    <Option value="global">GLOBAL (2.11.300)</Option>
-                    <Option value="japanese">JAPAN (2.12.50)</Option>
+                    <Option value="global">GLOBAL (2.11.500)</Option>
+                    <Option value="japanese">JAPAN (2.12.60)</Option>
                 </Select>
             </Col>
         </Row>

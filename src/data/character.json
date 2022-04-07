@@ -2617,7 +2617,6 @@
         "free": false,
         "first": true,
         "sky": "light",
-        "jonly": true,
         "change": [282]
     },
     {
@@ -2627,7 +2626,6 @@
         "category": 28,
         "from": [281],
         "sky": "light",
-        "jonly": true,
         "change": []
     },
     {
@@ -2638,7 +2636,6 @@
         "free": true,
         "first": true,
         "sky": "light",
-        "jonly": true,
         "change": [284]
     },
     {
@@ -2648,7 +2645,6 @@
         "category": 52,
         "from": [283],
         "sky": "light",
-        "jonly": true,
         "change": []
     },
     {

@@ -2653,7 +2653,7 @@
         "style": "ns",
         "category": 44,
         "sky": "shadow",
-        "jonly": true,
+        "jonly": false,
         "change": [12]
     },
     {

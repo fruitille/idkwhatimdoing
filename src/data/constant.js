@@ -4,7 +4,7 @@ export const ELEMENTS = [
     {id: 2, element:"water"},
     {id: 3, element:"wind"},
     {id: 4, element:"earth"},
-    {id: 5, element:"lunatic"},
+    {id: 5, element:"etc"},
 ]
 
 export const WEAPONS = [

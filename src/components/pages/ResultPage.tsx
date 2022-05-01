@@ -92,7 +92,6 @@ function ResultPage() {
     return (
         <div style={{margin: "0 auto", width:"100%", maxWidth: "1100px", paddingTop:20}}>
             <h1>Result</h1>
-            <b>{formatMessage({id: "resultalert"})}</b>
             <Divider style={{margin: "10px auto"}}/>
             <DataManager/>
             <Divider style={{margin: "10px auto"}}/>

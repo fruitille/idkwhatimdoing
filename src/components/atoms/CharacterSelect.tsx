@@ -18,7 +18,7 @@ const CharacterSelect:React.FC<CharacterInfo> = (data) => {
         if(inven.includes(id)) 
             removeInven(id)
         else {
-            const newData = data.from !== undefined ? [id, ...data.from] : [id]
+            const newData = data.from ? [id, ...data.from] : [id]
             addInven(newData)
         }
     }

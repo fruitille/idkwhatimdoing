@@ -36,7 +36,7 @@ function App() {
 
   return (
     <IntlProvider messages={message} locale={lang} defaultLocale='ko'>
-      <Router basename="/anothercharcheck">
+      <Router basename="/whalinglane">
         <Header/>
         <Routes>
           <Route path="/" element={result ? <ResultPage/> : <MainPage />} />

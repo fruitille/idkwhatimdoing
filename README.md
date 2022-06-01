@@ -1,3 +1,1 @@
-# AE Checklist & Tools
-
-[Site Guide](https://aecheck.tistory.com/3)
+# Azur Lane Skins (Check?)list

@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/anothercharcheck/static/css/main.d9368d64.chunk.css",
-    "main.js": "/anothercharcheck/static/js/main.a19bf10e.chunk.js",
-    "main.js.map": "/anothercharcheck/static/js/main.a19bf10e.chunk.js.map",
-    "runtime-main.js": "/anothercharcheck/static/js/runtime-main.fb5ab27a.js",
-    "runtime-main.js.map": "/anothercharcheck/static/js/runtime-main.fb5ab27a.js.map",
-    "static/css/2.8f6db6d9.chunk.css": "/anothercharcheck/static/css/2.8f6db6d9.chunk.css",
-    "static/js/2.8d1df70b.chunk.js": "/anothercharcheck/static/js/2.8d1df70b.chunk.js",
-    "static/js/2.8d1df70b.chunk.js.map": "/anothercharcheck/static/js/2.8d1df70b.chunk.js.map",
-    "index.html": "/anothercharcheck/index.html",
-    "static/css/2.8f6db6d9.chunk.css.map": "/anothercharcheck/static/css/2.8f6db6d9.chunk.css.map",
-    "static/css/main.d9368d64.chunk.css.map": "/anothercharcheck/static/css/main.d9368d64.chunk.css.map",
-    "static/js/2.8d1df70b.chunk.js.LICENSE.txt": "/anothercharcheck/static/js/2.8d1df70b.chunk.js.LICENSE.txt"
+    "main.css": "/whalinglane/static/css/main.d9368d64.chunk.css",
+    "main.js": "/whalinglane/static/js/main.a19bf10e.chunk.js",
+    "main.js.map": "/whalinglane/static/js/main.a19bf10e.chunk.js.map",
+    "runtime-main.js": "/whalinglane/static/js/runtime-main.fb5ab27a.js",
+    "runtime-main.js.map": "/whalinglane/static/js/runtime-main.fb5ab27a.js.map",
+    "static/css/2.8f6db6d9.chunk.css": "/whalinglane/static/css/2.8f6db6d9.chunk.css",
+    "static/js/2.8d1df70b.chunk.js": "/whalinglane/static/js/2.8d1df70b.chunk.js",
+    "static/js/2.8d1df70b.chunk.js.map": "/whalinglane/static/js/2.8d1df70b.chunk.js.map",
+    "index.html": "/whalinglane/index.html",
+    "static/css/2.8f6db6d9.chunk.css.map": "/whalinglane/static/css/2.8f6db6d9.chunk.css.map",
+    "static/css/main.d9368d64.chunk.css.map": "/whalinglane/static/css/main.d9368d64.chunk.css.map",
+    "static/js/2.8d1df70b.chunk.js.LICENSE.txt": "/whalinglane/static/js/2.8d1df70b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fb5ab27a.js",

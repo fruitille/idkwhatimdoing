@@ -11,8 +11,7 @@
   {return Object.keys(t)},
   s.resolve=n,e.exports=s,s.id=284},
   285:function(e)
-  {e.exports=JSON.parse('
-{
+  {e.exports=JSON.parse('{
   "101000011":"Veina",
   "101000031":"Mariel",
   "101000041":"Mighty",
@@ -103,7 +102,7 @@
   "101070061":"Melina",
   "101070081":"Biaka",
   "101070091":"Myunfa",
-  "101070101":"Yipha",
+  "101070101":"Akagi",
   "101070111":"Daisy",
   "101070121":"Noahxis",
   "101110041":"Strawboy",
@@ -310,7 +309,7 @@
   "\ud478\ub978 \ube5b\uc758 \ub0ab\uc7a1\uc774":"Cyan Scyther",
   "\ub9c1\ub9ac":"Lingli",
   "\ube44\ubca0\ud2b8":"Bivette",
-  "\uc774\ud504":"Yipha",
+  "\uc774\ud504":"Akagi",
   "\ub85c\ud0a4\ub4dc":"Lokido",
   "\uc2a4\uceec":"Skull",
   "\uc81c\uc774\ub4dc":"Jade",

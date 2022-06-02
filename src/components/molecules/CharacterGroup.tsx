@@ -31,10 +31,10 @@ const CharacterGroup:React.FC<CharInfoProps> = ({infos}) => {
                 borderRadius: "5px"
             }}
         >
-            <b>
-                {formatMessage({id: infos[0].code})}
-                {color==="red" ? <b style={{color: "red"}}> (Update!)</b> : null}
-            </b>    
+            //#<b>
+            //#    {formatMessage({id: infos[0].code})}
+            //#    {color==="red" ? <b style={{color: "red"}}> (Update!)</b> : null}
+            //#</b>    
             <div style={{marginTop: 3}}>               
                 {infos.map(info => (
                     <CharacterSelect key={info.id} {...info}/>

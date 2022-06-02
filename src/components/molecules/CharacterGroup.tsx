@@ -19,7 +19,7 @@ const CharacterGroup:React.FC<CharInfoProps> = ({infos}) => {
 
     // 새로 나온 캐릭터 강조표시
     const target_chars = version==="japanese" ? JAP_NEW : GLO_NEW
-    const color = target_chars.includes(infos[0].code) ? "red" : "lightblue"
+    const color = target_chars.includes(infos[0].code) ? "black" : "black"
 
     return (
         <FlexColumnCenterDiv
@@ -33,7 +33,7 @@ const CharacterGroup:React.FC<CharInfoProps> = ({infos}) => {
         >
             //#<b>
             //#    {formatMessage({id: infos[0].code})}
-            //#    {color==="red" ? <b style={{color: "red"}}> (Update!)</b> : null}
+            //#    {color==="black" ? <b style={{color: "black"}}> (Update!)</b> : null}
             //#</b>    
             <div style={{marginTop: 3}}>               
                 {infos.map(info => (

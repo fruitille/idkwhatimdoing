@@ -87,11 +87,11 @@ function Sidebar() {
                 onClick={() => setVisible(true)}
             />
             <div style={{flexGrow: 1, maxWidth: 1300, fontSize: 20, fontWeight: 600, lineHeight: "40px"}}>
-                AE Check &#38; Tools
+                Azur Lane Skins Checklist
             </div>
         </div>
         <Drawer 
-            title="AE Check &#38; Tools"
+            title="Azur Lane Skins Checklist"
             width={250}
             placement="left" 
             onClose={() => setVisible(false)} 

@@ -1,1 +1,1 @@
-# Azur Lane Skins (Check?)list
+# Azur Lane Skins Checklist
